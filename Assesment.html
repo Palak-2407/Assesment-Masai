@@ -1,0 +1,271 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Fashion Store</title>
+      <style>
+          * {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+              font-family: Arial, sans-serif;
+          }
+  
+          body {
+              background-color: #fff;
+          }
+  
+          header {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: 15px 40px;
+              background-color: #e60000;
+          }
+  
+          .logo h6 {
+              color: white;
+              font-size: 18px;
+          }
+  
+          nav ul {
+              display: flex;
+              list-style: none;
+          }
+  
+          nav ul li {
+              margin: 0 15px;
+          }
+  
+          nav ul li a {
+              color: white;
+              text-decoration: none;
+              font-size: 18px;
+              font-weight: bold;
+          }
+  
+          .icons img {
+              width: 25px;
+              margin-left: 10px;
+          }
+  
+          .hero {
+              width: 100%;
+              height: 450px;
+              background-image: url('front.webp');
+              background-size: cover;
+              background-position: center;
+              margin-top: 1%;
+              margin-left: 1%;
+              margin-right: 7%;
+              display: flex;
+              align-items: center;
+          }
+  
+          .new-arrivals {
+              text-align: center;
+              padding: 40px;
+          }
+  
+          .new-arrivals h2 {
+              font-size: 26px;
+              font-weight: bold;
+              margin-bottom: 20px;
+          }
+  
+          .product-grid {
+              display: grid;
+              grid-template-columns: repeat(4, 1fr);
+              gap: 20px;
+              max-width: 90%;
+              margin: auto;
+          }
+  
+          .product {
+              text-align: center;
+          }
+  
+          .product img {
+              width: 100%;
+              border-radius: 8px;
+          }
+  
+          .product h3 {
+              font-size: 18px;
+              margin: 10px 0;
+          }
+  
+          .product p {
+              color: gray;
+              font-size: 14px;
+          }
+  
+          .product span {
+              font-size: 16px;
+              font-weight: bold;
+              color: black;
+          }
+
+          .categories {
+              text-align: center;
+              padding: 40px;
+          }
+
+          
+          .categories h2 {
+              font-size: 26px;
+              font-weight: bold;
+              margin-bottom: 20px;
+          }
+  
+          .category-grid {
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+              gap: 20px;
+              max-width: 90%;
+              margin: auto;
+          }
+  
+          .category {
+              position: relative;
+              border-radius: 8px;
+              overflow: hidden;
+          }
+  
+          .category img {
+              width: 100%;
+              border-radius: 8px;
+          }
+  
+          .category span {
+              position: absolute;
+              top: 10px;
+              left: 10px;
+              background-color: white;
+              padding: 5px 10px;
+              font-size: 14px;
+              font-weight: bold;
+              border-radius: 4px;
+          }
+
+          .fotter{
+            text-align: center;
+          }
+          @media (max-width: 900px) {
+              .product-grid, .category-grid {
+                  grid-template-columns: repeat(2, 1fr);
+              }
+          }
+  
+          @media (max-width: 600px) {
+              .product-grid, .category-grid {
+                  grid-template-columns: 1fr;
+              }
+          }
+      </style>
+  </head>
+  <body>
+  
+      <header>
+          <div class="logo">
+              <h6>Logo</h6>
+          </div>
+          <nav>
+              <ul>
+                  <li><a href="#">Women</a></li>
+                  <li><a href="#">Men</a></li>
+                  <li><a href="#">Kids</a></li>
+                  <li><a href="#">Accessories</a></li>
+                  <li><a href="#">Collections</a></li>
+              </ul>
+          </nav>
+          <div class="icons">
+              <img src="search-icon.png" alt="Search">
+              <img src="cart.webp" alt="Cart">
+              <img src="user.webp" alt="User">
+          </div>
+      </header>
+      <section class="hero"></section>
+
+      <section class="new-arrivals">
+          <h2>NEW ARRIVALS</h2>
+          <div class="product-grid">
+              <div class="product">
+                  <img src="shoes.webp" alt="Shoes">
+                  <h3>TSS Originals: Cloud 9</h3>
+                  <p>Women Low Top Sneakers</p>
+                  <span>₹ 2899</span>
+              </div>
+              <div class="product">
+                  <img src="jogger.webp" alt="Joggers">
+                  <h3>Wanderer's Whimsy</h3>
+                  <p>Women Joggers</p>
+                  <span>₹ 1499</span>
+              </div>
+              <div class="product">
+                  <img src="tshirt1.webp" alt="T-shirt">
+                  <h3>Disney: Slow Sunday</h3>
+                  <p>Women T-Shirts</p>
+                  <span>₹ 599</span>
+              </div>
+              <div class="product">
+                  <img src="tshirt2.webp" alt="T-shirt">
+                  <h3>ISRO: Logo</h3>
+                  <p>Women Oversized T-Shirts</p>
+                  <span>₹ 899</span>
+              </div>
+          </div>
+      </section>
+      <section class="categories">
+          <h2>CATEGORIES</h2>
+          <div class="category-grid">
+              <div class="category" style="display: ;">
+                  <img src="Tops.webp" alt="Tops">
+                  <span>Tops</span>
+              </div>
+              <div class="category">
+                  <img src="oversized.webp" alt="Oversized T-Shirts">
+                  <span>Oversized T-Shirts</span>
+              </div>
+              <div class="category">
+                  <img src="pants.webp" alt="Pants">
+                  <span>Pants</span>
+              </div>
+              <div class="category">
+                  <img src="shirts.webp" alt="Shirts">
+                  <span>Shirts</span>
+              </div>
+              <div class="category">
+                  <img src="sneaker.webp" alt="Sneakers">
+                  <span>Sneakers</span>
+              </div>
+              <div class="category">
+                  <img src="dresses.webp" alt="Dresses">
+                  <span>Dresses</span>
+              </div>
+          </div>
+      </section>
+
+      <section class="new-arrivals">
+        <h2>INNOVATION OF WEEKS</h2>
+        <div class="product-grid">
+            <div class="product" style="align-items: center";>
+                <img src="invo1.webp">
+            </div>
+            <div class="product">
+                <img src="invo2.webp" alt="Joggers">
+            </div>
+            <div class="product">
+                <img src="invo3.webp" alt="T-shirt">
+            </div>
+        </div>
+    </section>
+      <section class="fotter">
+        <h2>WHY CHOOSE US?</h2>
+        <img src="bottom.webp" style="width: 100%; max-width: 1000px; display: block; margin: 20px auto;">
+    </section>
+  
+  </body>
+  </html>
+  
